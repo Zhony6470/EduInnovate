@@ -1,0 +1,192 @@
+/* Estilos generales para el chat */
+
+h2 {
+    color: #fff;
+    background: linear-gradient(to top, rgba(1, 105, 224, 0.7), rgba(0, 191, 255, 0.7));
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    font-size: 1.5em;
+}
+
+.chat-section {
+    padding: 20px;
+}
+
+.chat-box {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #e3f2fd; /* Fondo suave que combina con los tonos del header */
+}
+
+.messages {
+    flex: 1;
+    padding: 15px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column-reverse; /* Nuevos mensajes al final */
+    background-color: #bbdefb; /* Fondo más oscuro que combina con los tonos de azul */
+    border-radius: 10px;
+}
+
+.message {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 15px;
+    position: relative;
+    max-width: 80%;
+    padding: 15px;
+    border-radius: 12px;
+    background-color: #0277bd; /* Azul oscuro para los mensajes */
+    color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.message.user {
+    align-self: flex-end;
+    background-color: #039be5; /* Azul más claro para los mensajes del usuario */
+}
+
+.message-content {
+    word-wrap: break-word;
+    word-break: break-word;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+.message-time {
+    font-size: 0.85em;
+    color: #e1f5fe; /* Texto claro */
+    margin-top: 5px;
+}
+
+.message-attachment {
+    font-size: 0.9em;
+    color: #0288d1; /* Color azul que combina con el tema */
+    margin-top: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.message-attachment a {
+    color: #c1c4c5;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.message-attachment a:hover {
+    text-decoration: underline;
+}
+
+.message-attachment i {
+    font-size: 1em; /* Tamaño del ícono */
+    color: #ffffff; /* Mismo color que el enlace */
+}
+
+/* Botón de eliminar con estilo moderno */
+.delete-button {
+    background-color: #e53935; /* Rojo contrastante */
+    border: none;
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 0.8em;
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    display: none; /* Oculto hasta que se active el hover */
+    transition: background-color 0.3s ease;
+}
+
+.delete-button:hover {
+    background-color: #d32f2f;
+}
+
+.delete-button i {
+    font-size: 1.2em;
+    margin: 0;
+}
+
+/* Mostrar el botón de eliminar al pasar el ratón por encima del mensaje */
+.message:hover .delete-button {
+    display: block;
+}
+
+/* Formulario de entrada de mensajes */
+form {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    background-color: #fff;
+    border-top: 1px solid #ddd;
+}
+
+#message-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #0288d1; /* Borde azul */
+    border-radius: 25px;
+    background-color: #f8f8f8;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+#message-input:focus {
+    border-color: #0277bd; /* Azul oscuro al enfocar */
+}
+
+#send-button, #attach-button, #cancel-button {
+    padding: 12px 20px;
+    border: none;
+    background-color: #039be5; /* Botones en azul que combina con el header */
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+}
+
+#send-button:hover, #attach-button:hover, #cancel-button:hover {
+    background-color: #0277bd; /* Azul más oscuro al hacer hover */
+}
+
+#attach-button .fas, #cancel-button .fas {
+    font-size: 1.2em;
+}
+
+#cancel-button {
+    display: none; /* Oculto por defecto */
+}
+
+#file-name {
+    margin-left: 10px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+
+
+#video-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+video {
+    width: 45%;
+    border: 1px solid #ddd;
+}
+
+

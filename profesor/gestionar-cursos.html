@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestionar Cursos - Profesor</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../styles/home.css">
+    <script src="../scripts/gestionar-cursos.js" defer></script>
+    <script src="../scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="logo EduInnovate">
+        </div>
+        <h1>Cursos</h1>
+    </header>
+    <nav>
+        <a href="#" class="menu-icon">&#9776;</a>
+        <a href="../index.html">Cerrar Sesión</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="home-profesor.html">Inicio</a></li>
+                <li><a href="gestionar-cursos.html" class="active">Gestionar Cursos</a></li>
+                <li><a href="chats.html">Mensajes</a></li>
+                <li><a href="perfil.html">Ver Perfil</a></li>
+                <li><a href="anuncios.html">Anuncios</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <section class="content-section">
+                <h2>Gestionar Cursos</h2>
+                <div class="actions">
+                    <div class="action-item">
+                        <h3>Mis Cursos</h3>
+                        <p>Visualiza y gestiona tus cursos actuales.</p>
+                        <div class="table-responsive">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nombre del Curso</th>
+                                        <th>Acciones</th>
+                                    </tr>
+                                </thead>
+                                <tbody id="curso-table-body">
+                                    <!-- Aquí se añadirán los cursos existentes -->
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <h3>Agregar Nuevo Curso</h3>
+                        <label for="grupo-select">Seleccionar Grupo:</label>
+                        <select id="grupo-select">
+                            <!-- Opciones generadas dinámicamente -->
+                        </select>
+                        <label for="nombre-curso">Nombre del Curso:</label>
+                        <input type="text" id="nombre-curso" name="nombre-curso" required>
+                        <button class="boton-gestionar" id="agregar-curso">Agregar Curso</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aula Virtual. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>

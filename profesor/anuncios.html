@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anuncios - Aula Virtual</title>
+    <link rel="icon" href="../img/logo.ico">
+    <link rel="stylesheet" href="../styles/home.css">
+    <link rel="stylesheet" href="../styles/anuncios.css">
+    <script src="../scripts/anuncios.js" defer></script>
+    <script src="../scripts/home.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/logo.jpg" alt="logo EduInnovate">
+        </div>
+        <h1>Anuncios</h1>
+    </header>
+    <nav>
+        <a href="#" class="menu-icon">&#9776;</a>
+        <a href="../index.html">Cerrar Sesión</a>
+    </nav>
+    <div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li><a href="home-profesor.html">Inicio</a></li>
+                <li><a href="gestionar-cursos.html">Gestionar Cursos</a></li>
+                <li><a href="chats.html">Mensajes</a></li>
+                <li><a href="perfil.html">Ver Perfil</a></li>
+                <li><a href="anuncios.html" class="active">Anuncios</a></li>
+            </ul>
+        </aside>
+        <main class="main-content">
+            <section class="anuncios-section">
+                <h2>Publicar Anuncio</h2>
+                <div class="anuncios-box">
+                    <div class="anuncios-list" id="anuncios-container">
+                        <!-- Anuncios serán añadidos aquí -->
+                    </div>
+                    <form id="anuncio-form">
+                        <div class="form-group">
+                            <label for="titulo">Título:</label>
+                            <input type="text" id="titulo" name="titulo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="contenido">Contenido:</label>
+                            <textarea id="contenido" name="contenido" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" id="publish-button">Publicar</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <p>&copy; 2024 Aula Virtual. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
+
+

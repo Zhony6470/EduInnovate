@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduInnovate+ - Inicio</title>
+    <link rel="stylesheet" href="styles.css">
+    <meta name="description" content="EduInnovate+ es una plataforma de aula virtual diseñada para facilitar el aprendizaje y la enseñanza a través de recursos en línea, colaboración y herramientas interactivas.">
+    <meta name="keywords" content="Aula Virtual, Educación, Innovación, Aprendizaje en línea, Herramientas interactivas">
+    <link rel="icon" href="img/logo.ico">
+    <script src="scripts.js" defer></script>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="logo">
+                <img src="img/logo.jpg" alt="logo EduInnovate">
+            </div>
+            <h1>EduInnovate+</h1>
+        </header>
+        <nav>
+            <a href="caracteristicas.html">Características</a>
+            <a href="equipo.html">Equipo</a>
+            <a href="contacto.html">Contacto</a>
+        </nav>
+        <div class="content-wrapper">
+            <section class="content">
+                <main>
+                    <div class="lema">
+                        <h2>"Descubre el Poder de Aprender y Crear en un Mundo en Constante Evolución"</h2>
+                    </div>
+                    <article>
+                        <h3>Bienvenidos al Aula Virtual</h3>
+                        <p>Esta es una plataforma diseñada para facilitar el aprendizaje y la enseñanza a través de recursos en línea, colaboración y herramientas interactivas.</p>
+                    </article>
+                    <article class="login-section">
+                        <h3>Inicio de Sesión</h3>
+                        <form onsubmit="event.preventDefault(); redirectToRolePage();">
+                            <div class="role-selection">
+                                <label>
+                                    <input type="radio" name="role" value="estudiante" required>
+                                    <span>Estudiante</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="role" value="profesor">
+                                    <span>Profesor</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="role" value="coordinador">
+                                    <span>Coordinador</span>
+                                </label>
+                            </div>
+                            <input type="submit" value="Continuar">
+                        </form>
+                    </article>
+                </main>
+            </section>
+        </div>
+        <footer>
+            <p>&copy; 2024 Aula Virtual. Todos los derechos reservados.</p>
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+/* Estilos para la sección de anuncios */
+h2 {
+    color: #fff;
+    background-color: #6fb5ffcc;
+    width: 100px;
+    border-radius: 10%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+.anuncios-section {
+    padding: 20px;
+}
+
+.anuncios-box {
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    border-radius: 35px;
+    overflow: hidden;
+    background: linear-gradient(to left, rgba(1, 105, 224, 0.7), rgba(0, 191, 255, 0.5));
+}
+
+.anuncios-list {
+    flex: 1;
+    padding: 10px;
+    overflow-y: auto;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.anuncio {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.anuncio h4 {
+    margin: 0 0 5px 0;
+}
+
+.anuncio p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#publish-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#publish-button:hover {
+    background-color: #0056b3;
+}
+
+
